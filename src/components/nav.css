@@ -1,0 +1,14 @@
+.btn {
+    cursor: pointer;
+}
+
+.categoria{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+}

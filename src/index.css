@@ -5,6 +5,9 @@
 }
 
 .grid-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr, 4fr;
   grid-template-rows: 100px, auto, 100px;
@@ -33,19 +36,22 @@ img{
     max-width: 50px;
     max-height: 50px;
 }
+
 .header{
   grid-area: header;
   background: black;
   padding: 0 50px;
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
 nav{
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  width: 50%;
 }
 
 ul{

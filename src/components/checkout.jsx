@@ -1,8 +1,9 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { CartContext } from '../context/cartcontext';
 import { useForm } from 'react-hook-form';
 import { collection, addDoc } from "firebase/firestore";
 import { db } from '../firebase/firebaseConfig';
+import Swal from "sweetalert2";
 
 
 export const CheckOut = () => {
@@ -29,6 +30,7 @@ export const CheckOut = () => {
             })
 
     }
+
 
     if (orderId) {
         return (

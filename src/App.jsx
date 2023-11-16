@@ -9,7 +9,7 @@ import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import { Footer } from "./components/footer";
 import { CartProvider } from "./context/cartcontext";
 import { Carrito} from "./components/cart";
-import { CheckOut } from "./components/checkout";
+import CheckoutForm, { CheckOut } from "./components/checkout";
 
 
 
@@ -19,7 +19,7 @@ function App () {
 
   return (
     
-      <BrowserRouter className="grid-container">
+      <BrowserRouter className="body">
         <CartProvider>
           <Nav /> 
             <main className="main">

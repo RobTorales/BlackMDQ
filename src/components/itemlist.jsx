@@ -9,7 +9,7 @@ const ItemList = ( {productos} ) => {
             {productos.length === 0 ?(
                     <Loading/>
                 ): (
-                    <div className="contenedor-productos">
+                    <div className="contenedor-productos" data-aos="fade-up">
                     { productos.map((prod) => <Item producto={prod} key={prod.id}/>)}        
                     </div>
                 ) 

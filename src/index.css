@@ -8,8 +8,8 @@
   display: flex;
   flex-direction: column;
   display: grid;
-  grid-template-columns: 1fr, 4fr;
-  grid-template-rows: 100px, auto, 100px;
+  grid-template-columns: 1fr;
+    grid-template-rows: 150px, auto, 100px;
   grid-template-areas: 
   "header"
   "aside"
@@ -85,6 +85,29 @@ footer{
  .contenedor-categorias{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding: 20px;
  }
+
+ .contenedor-productos{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap:1rem;
+  padding: 10px;
+}
+ 
+@media screen and (max-width:912px) {
+  .contenedor-productos {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px){
+
+  .contenedor-productos{
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+      gap:1rem;
+  }
+}
 

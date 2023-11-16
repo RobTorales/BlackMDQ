@@ -11,6 +11,7 @@
     display: flex;
     justify-content: flex-end;
     background-color: black;
+    flex-direction: row;
 }
 
 

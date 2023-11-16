@@ -7,7 +7,17 @@ export const CartContext = createContext ({
 export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([])
 
-    console.log(cart)
+    useEffect(() => {
+        const storedCart = JSON.parse(localStorage.getItem('cart')) || [];
+        setCart(storedCart);
+      }, []);
+    
+
+      useEffect(() => {
+        localStorage.setItem('cart', JSON.stringify(cart));
+      }, [cart]);
+    
+      console.log(cart);
 
     const addItem = (item, quantity) => {
         if(!isInCart(item.id)) {
@@ -36,6 +46,7 @@ export const CartProvider = ({ children }) => {
     const quantityInCart = () => {
         return cart.reduce((acc, producto) => acc + producto.quantity, 0);
     }
+    
     return(
         <CartContext.Provider value={{ cart, addItem, clearCart, total, quantityInCart, deleteItem}}>
             { children }

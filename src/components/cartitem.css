@@ -12,6 +12,7 @@
 
 .carrito-lista{
     display: flex;
+    align-items: center;
     gap: 50px;
 }
 
@@ -19,5 +20,6 @@
     background-color: black;
     border-radius: 5px;
     border: none;
-    
+    height: 45px;
+    width: 45px;
 }

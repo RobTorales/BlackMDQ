@@ -4,7 +4,7 @@
   font-family: 'Prompt', sans-serif;
 }
 
-.grid-container{
+.body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -17,17 +17,6 @@
   "main"
   "footer"
   ;
-}
-
-h1 {
-  font-family: "mi fuente";
-  font-size: 3.2em;
-  color: white;
-}
-
-@font-face{
-  font-family: "mi fuente";
-  src: url(../fonts/Germanika\ Personal\ Use.ttf);
 }
 
 img{
@@ -77,6 +66,8 @@ main{
   flex-wrap: wrap;
   display: grid;
   padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 footer{

@@ -86,12 +86,20 @@ main{
     grid-template-columns: 1fr;
   }
   .contenedor-productos{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   footer{
     display: flex;
     flex-direction: column;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 

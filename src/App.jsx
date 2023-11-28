@@ -22,7 +22,6 @@ function App () {
       <BrowserRouter className="body">
         <CartProvider>
           <Nav /> 
-            <main className="main">
               <Routes>
                 <Route path="/" element={<ItemListContainer/>}/>
                 <Route path="/item/:id" element={<ItemDetailContainer />}/>
@@ -32,7 +31,6 @@ function App () {
                 <Route path="/checkout" element={<CheckOut/>}/>
                 <Route path="*" element={<h4>Error 404: Page not found</h4>}/>
               </Routes>     
-            </main>
           <Footer/>
         </CartProvider>  
       </BrowserRouter>

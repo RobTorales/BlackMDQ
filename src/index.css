@@ -5,16 +5,17 @@
 }
 
 .body{
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
+  display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-auto-rows: 22rem;
 }
 
 img{
     height: auto;
     width: auto;
-    max-width: 70px;
-    max-height: 70px;
+    max-width: 80px;
+    max-height: 80px;
 }
 
 .header{
@@ -53,7 +54,6 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-  display: grid;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -61,7 +61,6 @@ main{
 
 .boton-categoria{
     text-align: none;
-    padding: 4px 8px;
     cursor: pointer;
     border: white 10px ;
  }
@@ -74,12 +73,12 @@ main{
  }
 
  .contenedor-productos{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
  }
 
 
-@media screen and (max-width: 700px){
+@media screen and (min-width: 200px) and (max-width: 700px){
 
   .body{
     grid-template-columns: 1fr;
@@ -116,6 +115,14 @@ main{
 
 .close-menu{
     display: block;
+}
+
+.img{
+  width: auto;
+  height: auto;
+  max-height: 100px;
+  max-width: 100px;
+
 }
 
 }

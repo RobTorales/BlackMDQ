@@ -1,6 +1,6 @@
 .contenedor-productos{
     display: grid;
-    grid-template-columns: repeat(5, 280px);
+    grid-template-columns: repeat(auto-fill, minmax( 280px, 1fr));
     gap:1rem; 
 }
 
@@ -11,7 +11,6 @@
     flex-direction: column;
     width: auto;
     max-width: 250px;
-    transition: box-shadow .3s ease, transform .2s ease;
 }
 
 .producto-titulo{

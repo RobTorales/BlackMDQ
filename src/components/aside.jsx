@@ -1,7 +1,9 @@
 import React from 'react'
 
 export const Aside = () => {
-  return (
+  return (       
+
+    
                 <div className="contenedor-categorias">
                     <button type="button" className="btn btn-outline-dark">Buzos</button>
                     <button type="button" className="btn btn-outline-dark">Remeras</button>

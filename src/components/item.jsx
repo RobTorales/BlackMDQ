@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
  
 const Item = ( {producto} ) => {
     return(
-                <div className="producto" data-aos="fade-up">
+                <div className="producto" >
                     <img className="producto-imagen"src={producto.imagen} alt="" />
                     <div className="producto-detalles">
                         <h2 className="producto-titulo">{producto.nombre}</h2>

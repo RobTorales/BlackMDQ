@@ -15,17 +15,21 @@ import './nav.css';
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link to="/">inicio</Link>
-                            </li>
-                            <li className="nav-item">
                                 <Link to="/contacto">Contacto</Link>
                             </li>
                         </ul>
                         <CartWidget/>
+                        <input type="checkbox" id="check"/>
+                        <label class="open-menu" id="open-menu">
+                            <i class="bi bi-list"></i>
+                        </label>
                         </div>
                     </div>
                 </nav>
                 <div className="categoria">
+                    <button for="check" class="close-menu" id="close-menu">
+                    <i class="bi bi-x-circle-fill"></i>
+                    </button>
                     <ul className="nav justify-content-center">
                         <li className="nav-item">
                             <button type="button" className="btn btn-outline-light"><Link  to="/productos/Buzos">Buzos</Link></button>

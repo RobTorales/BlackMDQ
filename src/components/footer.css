@@ -13,23 +13,25 @@ footer{
     top: 550px;
 }
 
+.section-div{
+    display: flex;
+    justify-content: space-between;
+ } 
+ 
 .tarjetas{
     height: auto;
     width: auto;
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 40px;
+    max-height: 40px;
 }
 
 .envio{
     height: auto;
     width: auto;
-    max-width: 50px;
-    max-height: 60px;
+    max-width: 80px;
+    max-height: 80px;
 }
 
-.oca{
-    height: 50px;
-}
 
 ul{
     list-style-type: none;

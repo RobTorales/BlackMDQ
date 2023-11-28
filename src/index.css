@@ -54,7 +54,6 @@ main{
   justify-content: center;
   align-items: center;
   display: grid;
-  padding: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -87,6 +86,7 @@ main{
   }
   .contenedor-productos{
     grid-template-columns: 1fr;
+    padding: 1px;
   }
 
   footer{
@@ -101,6 +101,23 @@ main{
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
+  .open-menu{
+    display: block;
+}
+
+.open-menu, .close-menu{ 
+    background-color: black;
+    color: white;
+    border: 0;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.close-menu{
+    display: block;
+}
+
 }
 
 

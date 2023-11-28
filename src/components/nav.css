@@ -14,4 +14,12 @@
     flex-direction: row;
 }
 
+.open-menu, .close-menu{
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
 
